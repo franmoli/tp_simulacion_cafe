@@ -4,6 +4,46 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 
+def rotura_de_cafetera():
+    #TODO: calcular probabilidad de rotura de cafetera y en caso de que rompa, actualizar var de estado
+    print("Rotura de cafetera")
+
+def llegada_de_cafe():
+    #TODO: sumar a la variable de estado las cantidades pedidas 
+    print("Llegó el café")
+
+def calculo_de_ventas_diarias():
+    #TODO: calcular ventas diarias y retornar valores
+    print("Ventas diarias")
+    return {
+            "brazilian": 0,
+            "columbian": 0,
+            "ethiopia": 0,
+            "jamaica": 0
+        }
+
+def calculo_de_perdida_de_calidad():
+    #TODO: calcular perdida de calidad diaria y retornar valores
+    return {
+            "brazilian": 0,
+            "columbian": 0,
+            "ethiopia": 0,
+            "jamaica": 0
+        }
+
+def llegada_de_cafetera_reparada():
+    print("Llegó la cafetera reparada")
+    #TODO: volver a poner la cafetera en principal
+    #TODO: subir la calidad de todos los cafés
+
+def llegada_de_servicio_tecnico():
+    print("Llega el servicio tecnico a retirar la cafetera")
+    #TODO: calcular el tiempo de reparacion de la cafetera y sumarlo al dia de llegada
+
+def pedido_de_cafe():
+    print("Aaa")
+    #TODO: calcular el tiempo en que tarda en llegar un tecnico
+
 #-----------------------------------------------------#
 def simulacion():
     while tiempo < tiempo_final:
@@ -13,88 +53,97 @@ def simulacion():
         #calcular o usar todo lo que entra ?? creo que no va nada
        
         #calcular o usar todo lo que sale
-        #todos los dias -> sale stock por venta y baja calidad
-        #TODO: calcular ventas diarias
-        ventas_diarias = []
-        #TODO: calcular perdida de calidad diaria
-        perdida_de_calidad = []
+        
+        ventas_diarias = calculo_de_ventas_diarias()
 
-        #TODO: calcular probabilidad de rotura de cafetera
+        perdida_de_calidad = calculo_de_perdida_de_calidad()
+
+        rotura_de_cafetera()
 
         #---------------Eventos comprometidos en dt anteriores---------------
          #si es dia de llegada -> sube stock y calidad
         if tiempo == fecha_llegada_pedido_cafe:
-            print("Llega pedido de cafe")
-            #TODO: sumar las variables de las cantidades que pediste
+            llegada_de_cafe()
 
+        #Si llega la cafetera se cambia el tipo de cafetera y sube la calidad
         if tiempo == fecha_entrega_cafetera_reparada:
-            print("Llega cafetera reparada")
-            #TODO: volver a poner la cafetera en principal
-
+            llegada_de_cafetera_reparada()
+            
+        #Si llegó el técnico se actualiza la fecha de llegada de la cafetera reparada
         if tiempo == fecha_llegada_servicio_tecnico:
-            print("Llega el servicio tecnico a retirar la cafetera")
-            #TODO: calcular el tiempo de reparacion de la cafetera y sumarlo al dia de llegada
+            llegada_de_servicio_tecnico()
 
         #------------Actualizacion del vector de modelo de estado-----------
-        #TODO: restar a cada estado
-        stock - ventas_diarias
-        quality - perdida_de_calidad
+
+        #Se actualizan los vectores de estado con las ventas y calidad diarios
+        for tipo, ventas in ventas_diarias.items():
+            stock[tipo] -= ventas
+        
+        for tipo, perdida in perdida_de_calidad.items():
+            stock[tipo] -= perdida
 
         #-----------Registro de eventos que comprometen dt futuros----------
-        #efectuar control de minima
-        if any(stock < 12 for stock in [brazilian_stock, columbian_stock, ethiopia_stock, jamaica_stock]):
-            print("Aaa")
-            #TODO: pedir cafe
-            #TODO: calcular fecha de llegada del pedido y actualizar variables
+        #Si algún café baja de los 12kg se realiza un pedido
+        if any(stock < 12 for tipo, stock in stock.items()):
+            pedido_de_cafe()
 
         #efectuar control de maxima ?? creo que no hay
 
     #totalizacion de resultados
+    #TODO: calcular estos resultados
+    prom_mensual_dias_sin_operacion = 0
+    porc_mensual_cafe_vendido_en_2x1 = 0
+    porc_clientes_perdidos_falta_cafe = 0
+    prom_mensual_costo_por_promo = 0
+    prom_mensual_gasto_electricidad = 0
+    prom_mensual_calidad_cafe = {
+        "brazilian": 0,
+        "columbian": 0,
+        "ethiopia": 0,
+        "jamaica": 0
+    }
     #impresion de resultados
-    #parar
+    #TODO: imprimir esos resultados
+    
 
 #-----------------------------------------------------#
 def main():
-    global brazilian_stock
-    global columbian_stock
-    global ethiopia_stock
-    global jamaica_stock
-    global brazilian_quality
-    global columbian_quality
-    global ethiopia_quality
-    global jamaica_quality
-    global brazilian_provider_quality
-    global columbian_provider_quality
-    global ethipoa_provider_quality
-    global jamaica_provider_quality
+    
     global tiempo
     global tiempo_final
     global stock
     global quality
+    global provider_quality
     global fecha_entrega_cafetera_reparada
     global fecha_llegada_pedido_cafe
     global fecha_llegada_servicio_tecnico
     global cafetera_en_uso
     global acum_dias_sin_cafetera
-    global acum_calidad_promedio_bra
-    global acum_calidad_poromedio_eth
     global acum_cafe_vendido_2x1
-    global acum_calidad_promedio_col
-    global acum_calidad_promedio_jam
     global acum_clientes_perdidos_sin_cafe
     global acum_costo_promociones
+    global acum_calidad_promedio
 
     #Condiciones iniciales
-    brazilian_stock = columbian_stock = ethiopia_stock = jamaica_stock = 0
-    brazilian_quality = columbian_quality = ethiopia_quality = jamaica_quality = 0
+    quality={
+        "brazilian": 0,
+        "columbian": 0,
+        "ethiopia": 0,
+        "jamaica": 0
+    }
+    stock={
+        "brazilian": 12,
+        "columbian": 12,
+        "ethiopia": 12,
+        "jamaica": 12
+    }
+    provider_quality={
+        "brazilian": 87,
+        "columbian": 91,
+        "ethiopia": 85,
+        "jamaica": 89
+    }
 
-    brazilian_provider_quality = 87
-    columbian_provider_quality = 91
-    ethipoa_provider_quality = 85
-    jamaica_provider_quality = 89
-
-    stock = [brazilian_stock, columbian_stock, ethiopia_stock, jamaica_stock]
-    quality =[brazilian_quality, columbian_quality, ethiopia_quality, jamaica_quality]
 
     #Cafetera en uso principal: P | secundaria: S
     cafetera_en_uso = "P"
@@ -111,10 +160,12 @@ def main():
     acum_cafe_vendido_2x1 = 0
     acum_clientes_perdidos_sin_cafe = 0
     acum_costo_promociones = 0
-    acum_calidad_promedio_bra = 0
-    acum_calidad_promedio_col = 0
-    acum_calidad_poromedio_eth = 0
-    acum_calidad_promedio_jam = 0
+    acum_calidad_promedio = {
+        "brazilian": 0,
+        "columbian": 0,
+        "ethiopia": 0,
+        "jamaica": 0
+    }
 
     simulacion()
 
