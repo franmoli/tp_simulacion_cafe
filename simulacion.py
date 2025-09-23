@@ -4,8 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 
-
-
+#-----------------------------------------------------#
 def simulacion():
     while tiempo < tiempo_final:
         #-------------avanzar tiempo en 1 dt----------
@@ -22,44 +21,39 @@ def simulacion():
 
         #TODO: calcular probabilidad de rotura de cafetera
 
-
-
         #---------------Eventos comprometidos en dt anteriores---------------
          #si es dia de llegada -> sube stock y calidad
         if tiempo == fecha_llegada_pedido_cafe:
-            print("AA")
+            print("Llega pedido de cafe")
             #TODO: sumar las variables de las cantidades que pediste
 
         if tiempo == fecha_entrega_cafetera_reparada:
+            print("Llega cafetera reparada")
             #TODO: volver a poner la cafetera en principal
 
         if tiempo == fecha_llegada_servicio_tecnico:
+            print("Llega el servicio tecnico a retirar la cafetera")
             #TODO: calcular el tiempo de reparacion de la cafetera y sumarlo al dia de llegada
-
 
         #------------Actualizacion del vector de modelo de estado-----------
         #TODO: restar a cada estado
         stock - ventas_diarias
         quality - perdida_de_calidad
 
-        #-----------Registro de enentos que comprometen dt futuros----------
+        #-----------Registro de eventos que comprometen dt futuros----------
         #efectuar control de minima
-        if stock[tipo_cafe] < 12:
+        if any(stock < 12 for stock in [brazilian_stock, columbian_stock, ethiopia_stock, jamaica_stock]):
             print("Aaa")
             #TODO: pedir cafe
             #TODO: calcular fecha de llegada del pedido y actualizar variables
 
         #efectuar control de maxima ?? creo que no hay
 
-
-
-
     #totalizacion de resultados
     #impresion de resultados
     #parar
 
-
-
+#-----------------------------------------------------#
 def main():
     global brazilian_stock
     global columbian_stock
@@ -122,14 +116,9 @@ def main():
     acum_calidad_poromedio_eth = 0
     acum_calidad_promedio_jam = 0
 
-
     simulacion()
 
-
-    
-        
-
-
+#-----------------------------------------------------#
 if __name__ == "__main__":
     main()
 
