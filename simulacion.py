@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
+from pprint import pprint
+
+
 
 def rotura_de_cafetera():
     #TODO: calcular probabilidad de rotura de cafetera y en caso de que rompa, actualizar var de estado
@@ -12,15 +15,67 @@ def llegada_de_cafe():
     #TODO: sumar a la variable de estado las cantidades pedidas 
     print("Llegó el café")
 
+def calcular_cafe_vendido_segun_fdp(fdp):
+    return fdp["distribucion"].rvs(**fdp["args"])
+
 def calculo_de_ventas_diarias():
     #TODO: calcular ventas diarias y retornar valores
     print("Ventas diarias")
-    return {
+
+    ventas_del_dia = {
             "brazilian": 0,
             "columbian": 0,
             "ethiopia": 0,
             "jamaica": 0
         }
+
+    fdps_por_tipo_cafe = {
+            "brazilian": {
+                "distribucion": stats.gompertz,
+                "args": {  
+
+                    'c': 3.469448137457656,
+                    'loc': 0.9999999999220399,
+                    'scale': 20.75482845260361
+                }
+            },
+            "columbian": {
+                "distribucion": stats.mielke,
+                "args": {   
+                    'k': 0.8215669903417332,
+                    's': 2.9968417938323064,
+                    'loc': 0.9999999999999999,
+                    'scale': 7.821896828095555
+                }
+            },
+            "ethiopia": {
+                "distribucion": stats.gompertz,
+                "args": {   
+                    'c': 3.2584654268287254,
+                    'loc': 0.9999999999466094,
+                    'scale': 20.519405815512926
+                }
+            },
+            "jamaica": {
+                "distribucion": stats.exponpow,
+                "args": {   
+                    'b': 0.6776736215652588,
+                    'loc': 0.9999999999999998,
+                    'scale': 8.100892711284596
+                }
+            }
+        }
+    
+    #fdp de cada tipo de cafe, en ventas por hora, se debe calcular por las horas de trabajo diarias
+    for i in range(horas_de_trabajo_diarias):
+        for tipo_cafe, fdp in fdps_por_tipo_cafe.items():
+            ventas = calcular_cafe_vendido_segun_fdp(fdp)
+            ventas_del_dia[tipo_cafe] += round(ventas)
+
+
+    print("Las ventas hoy fueron")
+    pprint(ventas_del_dia)
+    return ventas_del_dia
 
 def calculo_de_perdida_de_calidad():
     #TODO: calcular perdida de calidad diaria y retornar valores
@@ -46,13 +101,21 @@ def pedido_de_cafe():
 
 #-----------------------------------------------------#
 def simulacion():
+    
+    global tiempo
+    global tiempo_final
+    global fecha_llegada_pedido_cafe
+    global fecha_entrega_cafetera_reparada
+    global fecha_llegada_servicio_tecnico
+    global stock
+    global quality
+
+
     while tiempo < tiempo_final:
         #-------------avanzar tiempo en 1 dt----------
         tiempo += 1
         #-------------eventos del propio dia----------
         #calcular o usar todo lo que entra ?? creo que no va nada
-       
-        #calcular o usar todo lo que sale
         
         ventas_diarias = calculo_de_ventas_diarias()
 
@@ -80,7 +143,7 @@ def simulacion():
             stock[tipo] -= ventas
         
         for tipo, perdida in perdida_de_calidad.items():
-            stock[tipo] -= perdida
+            quality[tipo] -= perdida
 
         #-----------Registro de eventos que comprometen dt futuros----------
         #Si algún café baja de los 12kg se realiza un pedido
@@ -123,6 +186,7 @@ def main():
     global acum_clientes_perdidos_sin_cafe
     global acum_costo_promociones
     global acum_calidad_promedio
+    global horas_de_trabajo_diarias
 
     #Condiciones iniciales
     quality={
@@ -143,6 +207,8 @@ def main():
         "ethiopia": 85,
         "jamaica": 89
     }
+
+    horas_de_trabajo_diarias = 12
 
 
     #Cafetera en uso principal: P | secundaria: S
