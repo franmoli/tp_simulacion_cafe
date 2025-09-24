@@ -17,36 +17,36 @@ def pedido_de_cafe():
     global pedido_de_cafe_reducido
     global tiempo_final
     
-
     aux_pedido = False
 
     if fecha_llegada_pedido_cafe == tiempo_final:
         #Calculo el tamaño de pedido
+        #pprint(stock)
         for tipo_cafe, stock_cafe in stock.items():
-            pprint(stock)
             if stock_cafe < 10000:
-                print("Pedí café:")
+                #print("Pedí café: " + tipo_cafe)
                 ultimo_pedido_cafe[tipo_cafe] = pedido_de_cafe_completo
                 aux_pedido = True
-            elif stock_cafe < 12000:
-                print("Pedi reducido: " + tipo_cafe)
+            else:
+                #print("Pedí reducido: " + tipo_cafe)
                 ultimo_pedido_cafe[tipo_cafe] = pedido_de_cafe_reducido
                 aux_pedido = True
     
-        #print("Se realizó un pedido de café: " + str(fecha_llegada_pedido_cafe - tiempo))
     if aux_pedido:
         #Calculo la fecha de llegada del pedido
         fecha_llegada_pedido_cafe = tiempo + random.randint(2, 6)
+        #print("Se realizó un pedido de café. Llega: " + str(fecha_llegada_pedido_cafe))
 
 def llegada_de_cafe():
     global fecha_llegada_pedido_cafe
     global stock
     global ultimo_pedido_cafe
+    global tiempo
     global tiempo_final
     global quality
     global provider_quality
 
-    #print("Llegó el café")
+    #print("Llegó el café (día " + str(tiempo) + ")")
     for tipo_cafe_pedido, cantidad_pedido in ultimo_pedido_cafe.items():
         #print("Nueva qualy: " + str((quality[tipo_cafe_pedido] * stock[tipo_cafe_pedido] + provider_quality[tipo_cafe_pedido] * cantidad_pedido) / (stock[tipo_cafe_pedido] + cantidad_pedido)))
         #print(tipo_cafe_pedido)
@@ -405,9 +405,11 @@ def main():
     fecha_entrega_cafetera_reparada = 0
 
     tiempo = 0
-    #tiempo_final = 1000000
-    tiempo_final = 5
+    #tiempo_final = 1000
     #tiempo_final = 10000
+    #tiempo_final = 100000
+    #tiempo_final = 1000000
+    tiempo_final = 10000000
 
 
     fecha_llegada_pedido_cafe = tiempo_final
