@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 from pprint import pprint
+import math
 
 
 
@@ -77,14 +78,27 @@ def calculo_de_ventas_diarias():
     pprint(ventas_del_dia)
     return ventas_del_dia
 
-def calculo_de_perdida_de_calidad():
-    #TODO: calcular perdida de calidad diaria y retornar valores
-    return {
+def calculo_disminucion_calidad(q0):
+    global temperatura_ambiente_seteada
+    t = temperatura_ambiente_seteada + 273.15
+    k = math.exp(-3412.7 * (1/t) + 6.007)
+    return q0 * math.exp(-k)
+    
+
+def estimar_perdida_de_calidad():
+    global quality
+    perdidas_de_calidad = {
             "brazilian": 0,
             "columbian": 0,
             "ethiopia": 0,
             "jamaica": 0
         }
+    for tipo, calidad in quality.items():
+        perdidas_de_calidad[tipo] += calidad - calculo_disminucion_calidad(calidad)
+
+    print("hoy se perdio de calidad")
+    pprint(perdidas_de_calidad)
+    return perdidas_de_calidad
 
 def llegada_de_cafetera_reparada():
     print("Llegó la cafetera reparada")
@@ -119,7 +133,7 @@ def simulacion():
         
         ventas_diarias = calculo_de_ventas_diarias()
 
-        perdida_de_calidad = calculo_de_perdida_de_calidad()
+        perdidas_de_calidad = estimar_perdida_de_calidad()
 
         rotura_de_cafetera()
 
@@ -142,7 +156,7 @@ def simulacion():
         for tipo, ventas in ventas_diarias.items():
             stock[tipo] -= ventas
         
-        for tipo, perdida in perdida_de_calidad.items():
+        for tipo, perdida in perdidas_de_calidad.items():
             quality[tipo] -= perdida
 
         #-----------Registro de eventos que comprometen dt futuros----------
@@ -187,13 +201,16 @@ def main():
     global acum_costo_promociones
     global acum_calidad_promedio
     global horas_de_trabajo_diarias
+    global cafetera_seleccionada
+    global dias_con_promo
+    global temperatura_ambiente_seteada
 
     #Condiciones iniciales
     quality={
-        "brazilian": 0,
-        "columbian": 0,
-        "ethiopia": 0,
-        "jamaica": 0
+        "brazilian": 87,
+        "columbian": 91,
+        "ethiopia": 85,
+        "jamaica": 89
     }
     stock={
         "brazilian": 12,
@@ -219,7 +236,35 @@ def main():
     fecha_entrega_cafetera_reparada = 0
 
     tiempo = 0
-    tiempo_final = 1000000
+    #tiempo_final = 1000000
+    tiempo_final = 5
+
+    #vars de control
+    cafeteras = [
+        {
+            "modelo": "Luna",
+            "precio": "$7.600.000",
+            "disminucion_calidad": 5,
+            "probabilidad_de_falla": 0.0015
+        },
+        {
+            "modelo": "Neo",
+            "precio": "$10.000.000",
+            "disminucion_calidad": 3,
+            "probabilidad_de_falla": 0.0010
+        },
+        {
+            "modelo": "Saturno",
+            "precio": "$10.600.000",
+            "disminucion_calidad": 0,
+            "probabilidad_de_falla": 0.0008
+        }
+    ]
+
+    cafetera_seleccionada = cafeteras[0]
+    dias_con_promo = 0
+    temperatura_ambiente_seteada = 0
+
 
     #vars de resultado
     acum_dias_sin_cafetera = 0
@@ -233,7 +278,10 @@ def main():
         "jamaica": 0
     }
 
-    simulacion()
+
+    for cafetera in cafeteras:
+        cafetera_seleccionada = cafetera
+        simulacion()
 
 #-----------------------------------------------------#
 if __name__ == "__main__":
