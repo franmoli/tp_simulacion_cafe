@@ -17,25 +17,24 @@ def pedido_de_cafe():
     global pedido_de_cafe_reducido
     global tiempo_final
     
-    aux_pedido = False
 
-    if fecha_llegada_pedido_cafe == tiempo_final:
+    stocks_menores_al_umbral = sum(1 for stock in stock.values() if stock < 5000)
+    #print("Tengo " + str(stocks_menores_al_umbral) + " Stocks menores a 5kg")
+    #pprint(stock)
+
+    if fecha_llegada_pedido_cafe == tiempo_final and stocks_menores_al_umbral >= 2:
+        #print("Hago un pedido")
         #Calculo el tamaño de pedido
-        #pprint(stock)
         for tipo_cafe, stock_cafe in stock.items():
             if stock_cafe < 10000:
                 #print("Pedí café: " + tipo_cafe)
                 ultimo_pedido_cafe[tipo_cafe] = pedido_de_cafe_completo
-                aux_pedido = True
             else:
                 #print("Pedí reducido: " + tipo_cafe)
                 ultimo_pedido_cafe[tipo_cafe] = pedido_de_cafe_reducido
-                aux_pedido = True
     
-    if aux_pedido:
-        #Calculo la fecha de llegada del pedido
         fecha_llegada_pedido_cafe = tiempo + random.randint(2, 6)
-        #print("Se realizó un pedido de café. Llega: " + str(fecha_llegada_pedido_cafe))
+
 
 def llegada_de_cafe():
     global fecha_llegada_pedido_cafe
@@ -302,18 +301,18 @@ def simulacion():
     prom_mensual_gasto_electricidad = (acum_gasto_electricidad / tiempo_final) * 30
     
     prom_mensual_calidad_cafe = {
-        "brazilian": (acum_calidad_promedio["brazilian"] / tiempo_final),
-        "columbian": (acum_calidad_promedio["columbian"] /tiempo_final),
-        "ethiopia": (acum_calidad_promedio["ethiopia"] / tiempo_final),
-        "jamaica": (acum_calidad_promedio["jamaica"] / tiempo_final) 
+        "brazilian": round(acum_calidad_promedio["brazilian"] / tiempo_final, 2),
+        "columbian": round(acum_calidad_promedio["columbian"] /tiempo_final, 2),
+        "ethiopia": round(acum_calidad_promedio["ethiopia"] / tiempo_final, 2),
+        "jamaica": round(acum_calidad_promedio["jamaica"] / tiempo_final, 2)
     }
 
     # Impresión de resultados
     print("Prom mensual de dias sin cafetera: " + str(prom_mensual_dias_sin_operacion))
-    print("Porcentaje mensual de cafe vendido en 2X1: %" + str(porc_mensual_cafe_vendido_en_2x1))
-    print("Porcentaje de clientes perdidos por falta de café: " + str(porc_clientes_perdidos_falta_cafe))
-    print("Promedio mensual de costo por promociones: $" + str(prom_mensual_costo_por_promo))
-    print("Promedio mensual de gasto de electricidad: $" + str(prom_mensual_gasto_electricidad))
+    print("Porcentaje mensual de cafe vendido en 2X1: %" + str(round(porc_mensual_cafe_vendido_en_2x1, 2)))
+    print("Porcentaje de clientes perdidos por falta de café: " + str(round(porc_clientes_perdidos_falta_cafe, 2)))
+    print("Promedio mensual de costo por promociones: $" + str(round(prom_mensual_costo_por_promo, 2)))
+    print("Promedio mensual de gasto de electricidad: $" + str(round(prom_mensual_gasto_electricidad, 2)))
     print("Promedio mensual de calidad de café: ")
     pprint(prom_mensual_calidad_cafe)
     print("Café sobrante: ")
@@ -392,7 +391,7 @@ def main():
         "ethiopia": 0,
         "jamaica": 0
     }
-    pedido_de_cafe_completo = 8000
+    pedido_de_cafe_completo = 6000
     pedido_de_cafe_reducido = 2000
     
     prob_tamanio_vaso_chico = 0.33
@@ -400,16 +399,16 @@ def main():
     prob_tamanio_vaso_grande = 0.33
     grs_tamanio_vaso_chico = 10
     grs_tamanio_vaso_mediano = 16
-    grs_tamanio_vaso_grande = 18
+    grs_tamanio_vaso_grande = 24
 
     fecha_entrega_cafetera_reparada = 0
 
     tiempo = 0
     #tiempo_final = 1000
     #tiempo_final = 10000
-    #tiempo_final = 100000
+    tiempo_final = 100000
     #tiempo_final = 1000000
-    tiempo_final = 10000000
+    #tiempo_final = 10000000
 
 
     fecha_llegada_pedido_cafe = tiempo_final
