@@ -121,6 +121,22 @@ def calculo_de_ventas_diarias():
     #pprint(ventas_del_dia)
     return ventas_del_dia
 
+def adquirir_otro_producto(ventas_diarias, gramos_de_la_venta, probabilidad_acepta_promo, tipos_prohibidos):
+    global stock, costo_cafe
+    global acum_costo_promociones, acum_cafe_vendido_2x1, ventas_totales
+    global dias_restantes_de_promo
+
+    # candidatos excluyendo los prohibidos
+    candidatos = [t for t in ventas_diarias.keys() if t not in tipos_prohibidos]
+
+    if not candidatos:
+        return False  # no hay nada a ofrecer
+
+    elegido = random.choice(candidatos)
+
+    #TODO: logica de venta
+    return True
+    
 def calculo_disminucion_calidad(q0):
     global temperatura_ambiente_seteada
     t = temperatura_ambiente_seteada + 273.15
@@ -267,7 +283,10 @@ def simulacion():
                     #print("Costo calculado: " + str(((costo_cafe[tipo]*(gramos_de_la_venta/2))/1000)))
                     acum_costo_promociones += (((costo_cafe[tipo]*(gramos_de_la_venta/2))/1000) if probabilidad_acepta_promo < 0.7 else 0)
                 else:
-                    acum_clientes_perdidos_sin_cafe += 1
+                    probabilidad_acepta_otro_producto = random.random()
+                    if probabilidad_acepta_otro_producto < 0.2:
+                        acum_clientes_perdidos_sin_cafe += 1
+                        #adquirir_otro_producto(ventas_diarias, gramos_de_la_venta, probabilidad_acepta_promo, [tipo])
                 ventas -= 1
         
         for tipo, perdida in perdidas_de_calidad.items():
@@ -308,6 +327,8 @@ def simulacion():
     }
 
     # Impresión de resultados
+    print("Ventas totales: " + str(ventas_totales))
+    print("Clientes perdidos: " + str(acum_clientes_perdidos_sin_cafe))
     print("Prom mensual de dias sin cafetera: " + str(prom_mensual_dias_sin_operacion))
     print("Porcentaje mensual de cafe vendido en 2X1: %" + str(round(porc_mensual_cafe_vendido_en_2x1, 2)))
     print("Porcentaje de clientes perdidos por falta de café: " + str(round(porc_clientes_perdidos_falta_cafe, 2)))
@@ -405,8 +426,8 @@ def main():
 
     tiempo = 0
     #tiempo_final = 1000
-    #tiempo_final = 10000
-    tiempo_final = 100000
+    tiempo_final = 10000
+    #tiempo_final = 100000
     #tiempo_final = 1000000
     #tiempo_final = 10000000
 
@@ -437,8 +458,8 @@ def main():
     ]
 
     cafetera_seleccionada = cafeteras[0]
-    dias_al_mes_de_promo = 30
-    temperatura_ambiente_seteada = 18
+    dias_al_mes_de_promo = 20
+    temperatura_ambiente_seteada = 22
 
 
 
