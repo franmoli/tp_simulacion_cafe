@@ -14,15 +14,12 @@ def rotura_de_cafetera():
     if cafetera == "LUNA" and prob_falla <= 0.0015:
         print("Falló la cafetera")
         llegada_de_servicio_tecnico()
-        cafetera_en_uso = "S"
     elif cafetera == "NEO" and prob_falla <= 0.001:
         print("Falló la cafetera")
         llegada_de_servicio_tecnico()
-        cafetera_en_uso = "S"
     elif cafetera == "SATURNO" and prob_falla <= 0.0008:
         print("Falló la cafetera")
         llegada_de_servicio_tecnico()
-        cafetera_en_uso = "S"
 
 def llegada_de_cafe():
     #TODO: sumar a la variable de estado las cantidades pedidas 
@@ -104,8 +101,15 @@ def llegada_de_cafetera_reparada():
     #TODO: subir la calidad de todos los cafés
 
 def llegada_de_servicio_tecnico():
-    print("Llega el servicio tecnico a retirar la cafetera")
-    #TODO: calcular el tiempo de reparacion de la cafetera y sumarlo al dia de llegada
+    print("Llegó el servicio tecnico a retirar la cafetera")
+    
+    fecha_entrega_cafetera_reparada = tiempo + stats.rdist.rvs(**{
+        'c': 1.1362268006606664,
+        'loc': 0.10017320659825403,
+        'scale': 4.899826793401747
+    })
+
+    cafetera_en_uso = "S"
 
 def pedido_de_cafe():
     print("Aaa")
