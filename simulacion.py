@@ -2,15 +2,25 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import random
 from scipy import stats
 from pprint import pprint
 import math
 
-
+#-----------------------------------------------------#
 
 def rotura_de_cafetera():
-    #TODO: calcular probabilidad de rotura de cafetera y en caso de que rompa, actualizar var de estado
-    print("Rotura de cafetera")
+    prob_falla = random.random()
+
+    if cafetera == "LUNA" and prob_falla <= 0.0015:
+        print("Falló la cafetera")
+        llegada_de_servicio_tecnico()
+    elif cafetera == "NEO" and prob_falla <= 0.001:
+        print("Falló la cafetera")
+        llegada_de_servicio_tecnico()
+    elif cafetera == "SATURNO" and prob_falla <= 0.0008:
+        print("Falló la cafetera")
+        llegada_de_servicio_tecnico()
 
 def llegada_de_cafe():
     #TODO: sumar a la variable de estado las cantidades pedidas 
@@ -20,7 +30,6 @@ def calcular_cafe_vendido_segun_fdp(fdp):
     return fdp["distribucion"].rvs(**fdp["args"])
 
 def calculo_de_ventas_diarias():
-    #TODO: calcular ventas diarias y retornar valores
     print("Ventas diarias")
 
     ventas_del_dia = {
@@ -106,8 +115,15 @@ def llegada_de_cafetera_reparada():
     #TODO: subir la calidad de todos los cafés
 
 def llegada_de_servicio_tecnico():
-    print("Llega el servicio tecnico a retirar la cafetera")
-    #TODO: calcular el tiempo de reparacion de la cafetera y sumarlo al dia de llegada
+    print("Llegó el servicio tecnico a retirar la cafetera")
+    
+    fecha_entrega_cafetera_reparada = tiempo + stats.rdist.rvs(**{
+        'c': 1.1362268006606664,
+        'loc': 0.10017320659825403,
+        'scale': 4.899826793401747
+    })
+
+    cafetera_en_uso = "S"
 
 def pedido_de_cafe():
     print("Aaa")
@@ -185,7 +201,8 @@ def simulacion():
 
 #-----------------------------------------------------#
 def main():
-    
+
+    global cafetera
     global tiempo
     global tiempo_final
     global stock
@@ -204,6 +221,8 @@ def main():
     global cafetera_seleccionada
     global dias_con_promo
     global temperatura_ambiente_seteada
+
+    #Control
 
     #Condiciones iniciales
     quality={
@@ -224,6 +243,7 @@ def main():
         "ethiopia": 85,
         "jamaica": 89
     }
+    cafetera = "LUNA" #LUNA, NEO, SATURNO
 
     horas_de_trabajo_diarias = 12
 
