@@ -8,19 +8,9 @@ from pprint import pprint
 import math
 
 #-----------------------------------------------------#
-
-def rotura_de_cafetera():
-    prob_falla = random.random()
-
-    if cafetera == "LUNA" and prob_falla <= 0.0015:
-        print("Falló la cafetera")
-        llegada_de_servicio_tecnico()
-    elif cafetera == "NEO" and prob_falla <= 0.001:
-        print("Falló la cafetera")
-        llegada_de_servicio_tecnico()
-    elif cafetera == "SATURNO" and prob_falla <= 0.0008:
-        print("Falló la cafetera")
-        llegada_de_servicio_tecnico()
+def pedido_de_cafe():
+    print("Aaa")
+    #TODO: calcular el tiempo en que tarda en llegar un tecnico
 
 def llegada_de_cafe():
     #TODO: sumar a la variable de estado las cantidades pedidas 
@@ -93,7 +83,6 @@ def calculo_disminucion_calidad(q0):
     k = math.exp(-3412.7 * (1/t) + 6.007)
     return q0 * math.exp(-k)
     
-
 def estimar_perdida_de_calidad():
     global quality
     perdidas_de_calidad = {
@@ -109,10 +98,13 @@ def estimar_perdida_de_calidad():
     pprint(perdidas_de_calidad)
     return perdidas_de_calidad
 
-def llegada_de_cafetera_reparada():
-    print("Llegó la cafetera reparada")
-    #TODO: volver a poner la cafetera en principal
-    #TODO: subir la calidad de todos los cafés
+def rotura_de_cafetera():
+    prob_falla = random.random()
+
+    if prob_falla <= cafetera_seleccionada["probabilidad_de_falla"]:
+        print("Falló la cafetera")
+        cafetera_en_uso = "S"
+        llegada_de_servicio_tecnico()
 
 def llegada_de_servicio_tecnico():
     print("Llegó el servicio tecnico a retirar la cafetera")
@@ -123,11 +115,10 @@ def llegada_de_servicio_tecnico():
         'scale': 4.899826793401747
     })
 
-    cafetera_en_uso = "S"
-
-def pedido_de_cafe():
-    print("Aaa")
-    #TODO: calcular el tiempo en que tarda en llegar un tecnico
+def llegada_de_cafetera_reparada():
+    print("Llegó la cafetera reparada")
+    cafetera_en_uso = "P"
+    #TODO: subir la calidad de todos los cafés
 
 #-----------------------------------------------------#
 def simulacion():
@@ -202,7 +193,6 @@ def simulacion():
 #-----------------------------------------------------#
 def main():
 
-    global cafetera
     global tiempo
     global tiempo_final
     global stock
@@ -221,8 +211,6 @@ def main():
     global cafetera_seleccionada
     global dias_con_promo
     global temperatura_ambiente_seteada
-
-    #Control
 
     #Condiciones iniciales
     quality={
@@ -243,13 +231,13 @@ def main():
         "ethiopia": 85,
         "jamaica": 89
     }
-    cafetera = "LUNA" #LUNA, NEO, SATURNO
 
     horas_de_trabajo_diarias = 12
 
 
     #Cafetera en uso principal: P | secundaria: S
     cafetera_en_uso = "P"
+    disminucion_calidad_cafetera_seleccionada = 10
 
     fecha_llegada_pedido_cafe = 0
     fecha_llegada_servicio_tecnico = 0
