@@ -152,7 +152,7 @@ class Simulacion:
 
 
     def estimar_consumo_aire_acondicionado(self):
-        temperatura_exterior = stats.gompertz.rvs(c=0.034854492527651965, loc = 7.999999949139289, scale = 4.540761573324662)
+        temperatura_exterior = stats.johnsonsb.rvs(a=0.7754053225581187, b=1.4858895610018643, loc = 2.2426877152581275, scale = 34.80171045035129)
         return 1.5 * 30 * abs(self.temperatura_ambiente_seteada - temperatura_exterior)
 
     #-----------------------------------------------------#
@@ -241,8 +241,7 @@ class Simulacion:
             self.acum_gasto_electricidad += self.estimar_consumo_aire_acondicionado() * 1230 #$1230 precio estimado del W en Edesur
 
             for tipo, _ in self.acum_calidad_promedio.items():
-                perdida_por_cafetera = (10 if self.cafetera_en_uso == "S" else self.cafetera_seleccionada["disminucion_calidad"])
-                self.acum_calidad_promedio[tipo] += self.quality[tipo] - perdida_por_cafetera
+                self.acum_calidad_promedio[tipo] += self.quality[tipo] - (10 if self.cafetera_en_uso == "S" else self.cafetera_seleccionada["disminucion_calidad"])
 
             if self.dias_restantes_de_promo > 0:
                 self.dias_restantes_de_promo -= 1
@@ -383,6 +382,7 @@ class Simulacion:
         self.dias_restantes_de_promo = self.dias_al_mes_de_promo
 
 
+#-----------------------------------------------------#
 def simulacion_completa():
     sim = Simulacion()
 
@@ -416,5 +416,3 @@ def simulacion_manual():
 #-----------------------------------------------------#
 if __name__ == "__main__":
     simulacion_completa()
-
-

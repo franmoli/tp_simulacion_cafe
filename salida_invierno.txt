@@ -1,0 +1,660 @@
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 1
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.063
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $252619.1
+Promedio mensual de gasto de electricidad: $8137571.36
+Promedio mensual de calidad de café: 
+{'brazilian': 78.82, 'columbian': 82.58, 'ethiopia': 77.05, 'jamaica': 80.41}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 1
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.051
+Porcentaje mensual de cafe vendido en 2X1: %3.14
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $256476.86
+Promedio mensual de gasto de electricidad: $6939050.17
+Promedio mensual de calidad de café: 
+{'brazilian': 78.27, 'columbian': 82.03, 'ethiopia': 76.52, 'jamaica': 79.84}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 1
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.039
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $252231.86
+Promedio mensual de gasto de electricidad: $9352660.66
+Promedio mensual de calidad de café: 
+{'brazilian': 77.63, 'columbian': 81.22, 'ethiopia': 75.96, 'jamaica': 79.06}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 1
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.039
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $252556.75
+Promedio mensual de gasto de electricidad: $14329517.53
+Promedio mensual de calidad de café: 
+{'brazilian': 76.93, 'columbian': 80.52, 'ethiopia': 75.32, 'jamaica': 78.34}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 6
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.045
+Porcentaje mensual de cafe vendido en 2X1: %17.45
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $1503614.81
+Promedio mensual de gasto de electricidad: $8168611.97
+Promedio mensual de calidad de café: 
+{'brazilian': 78.99, 'columbian': 82.74, 'ethiopia': 77.17, 'jamaica': 80.61}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 6
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.033
+Porcentaje mensual de cafe vendido en 2X1: %17.45
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $1506329.07
+Promedio mensual de gasto de electricidad: $6913005.66
+Promedio mensual de calidad de café: 
+{'brazilian': 78.45, 'columbian': 82.22, 'ethiopia': 76.7, 'jamaica': 80.09}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 6
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.066
+Porcentaje mensual de cafe vendido en 2X1: %17.45
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $1499647.52
+Promedio mensual de gasto de electricidad: $9478196.96
+Promedio mensual de calidad de café: 
+{'brazilian': 77.82, 'columbian': 81.52, 'ethiopia': 76.11, 'jamaica': 79.38}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 6
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.075
+Porcentaje mensual de cafe vendido en 2X1: %17.4
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1497037.12
+Promedio mensual de gasto de electricidad: $14444996.71
+Promedio mensual de calidad de café: 
+{'brazilian': 77.2, 'columbian': 80.83, 'ethiopia': 75.47, 'jamaica': 78.7}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 11
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.057
+Porcentaje mensual de cafe vendido en 2X1: %30.4
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2749486.26
+Promedio mensual de gasto de electricidad: $8061599.1
+Promedio mensual de calidad de café: 
+{'brazilian': 79.11, 'columbian': 82.9, 'ethiopia': 77.27, 'jamaica': 80.78}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 11
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.054
+Porcentaje mensual de cafe vendido en 2X1: %30.38
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2745428.31
+Promedio mensual de gasto de electricidad: $6959560.2
+Promedio mensual de calidad de café: 
+{'brazilian': 78.66, 'columbian': 82.41, 'ethiopia': 76.83, 'jamaica': 80.25}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 11
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.06
+Porcentaje mensual de cafe vendido en 2X1: %30.51
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2757754.15
+Promedio mensual de gasto de electricidad: $9370951.08
+Promedio mensual de calidad de café: 
+{'brazilian': 78.11, 'columbian': 81.8, 'ethiopia': 76.28, 'jamaica': 79.6}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 11
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.054
+Porcentaje mensual de cafe vendido en 2X1: %30.3
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2736530.29
+Promedio mensual de gasto de electricidad: $14344756.78
+Promedio mensual de calidad de café: 
+{'brazilian': 77.45, 'columbian': 81.11, 'ethiopia': 75.7, 'jamaica': 78.97}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 16
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.06
+Porcentaje mensual de cafe vendido en 2X1: %42.05
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3974403.93
+Promedio mensual de gasto de electricidad: $8168419.55
+Promedio mensual de calidad de café: 
+{'brazilian': 79.27, 'columbian': 83.1, 'ethiopia': 77.41, 'jamaica': 80.98}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 16
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.054
+Porcentaje mensual de cafe vendido en 2X1: %42.05
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3977269.72
+Promedio mensual de gasto de electricidad: $6938981.67
+Promedio mensual de calidad de café: 
+{'brazilian': 78.78, 'columbian': 82.59, 'ethiopia': 76.97, 'jamaica': 80.49}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 16
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.048
+Porcentaje mensual de cafe vendido en 2X1: %42.09
+Porcentaje de ventas perdidass por falta de café: %0.05
+Promedio mensual de costo por promociones: $3969000.97
+Promedio mensual de gasto de electricidad: $9344011.3
+Promedio mensual de calidad de café: 
+{'brazilian': 78.26, 'columbian': 82.02, 'ethiopia': 76.45, 'jamaica': 79.92}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 16
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.042
+Porcentaje mensual de cafe vendido en 2X1: %42.04
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3971899.2
+Promedio mensual de gasto de electricidad: $14390459.22
+Promedio mensual de calidad de café: 
+{'brazilian': 77.66, 'columbian': 81.31, 'ethiopia': 75.87, 'jamaica': 79.24}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 21
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.033
+Porcentaje mensual de cafe vendido en 2X1: %52.79
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5215963.59
+Promedio mensual de gasto de electricidad: $8135719.25
+Promedio mensual de calidad de café: 
+{'brazilian': 79.39, 'columbian': 83.23, 'ethiopia': 77.51, 'jamaica': 81.12}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 21
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.024
+Porcentaje mensual de cafe vendido en 2X1: %52.93
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5251560.95
+Promedio mensual de gasto de electricidad: $6973964.38
+Promedio mensual de calidad de café: 
+{'brazilian': 78.93, 'columbian': 82.73, 'ethiopia': 77.09, 'jamaica': 80.64}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 21
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.072
+Porcentaje mensual de cafe vendido en 2X1: %52.77
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5224692.05
+Promedio mensual de gasto de electricidad: $9329490.72
+Promedio mensual de calidad de café: 
+{'brazilian': 78.41, 'columbian': 82.15, 'ethiopia': 76.62, 'jamaica': 80.06}
+-----------------Nueva simulacion-----------
+Cafetera: Luna
+Dias al mes de promo: 21
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.042
+Porcentaje mensual de cafe vendido en 2X1: %52.8
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5231898.76
+Promedio mensual de gasto de electricidad: $14444060.86
+Promedio mensual de calidad de café: 
+{'brazilian': 77.85, 'columbian': 81.53, 'ethiopia': 76.07, 'jamaica': 79.44}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 1
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.018
+Porcentaje mensual de cafe vendido en 2X1: %3.12
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $254799.27
+Promedio mensual de gasto de electricidad: $8068411.42
+Promedio mensual de calidad de café: 
+{'brazilian': 80.83, 'columbian': 84.56, 'ethiopia': 79.04, 'jamaica': 82.42}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 1
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $253362.39
+Promedio mensual de gasto de electricidad: $6893519.1
+Promedio mensual de calidad de café: 
+{'brazilian': 80.28, 'columbian': 84.0, 'ethiopia': 78.53, 'jamaica': 81.81}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 1
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.063
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $252887.39
+Promedio mensual de gasto de electricidad: $9384142.21
+Promedio mensual de calidad de café: 
+{'brazilian': 79.64, 'columbian': 83.27, 'ethiopia': 77.93, 'jamaica': 81.04}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 1
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.03
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $251746.94
+Promedio mensual de gasto de electricidad: $14472461.53
+Promedio mensual de calidad de café: 
+{'brazilian': 78.93, 'columbian': 82.53, 'ethiopia': 77.26, 'jamaica': 80.27}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 6
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.072
+Porcentaje mensual de cafe vendido en 2X1: %17.47
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1499112.15
+Promedio mensual de gasto de electricidad: $8034157.95
+Promedio mensual de calidad de café: 
+{'brazilian': 80.98, 'columbian': 84.75, 'ethiopia': 79.18, 'jamaica': 82.63}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 6
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.03
+Porcentaje mensual de cafe vendido en 2X1: %17.47
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1503788.29
+Promedio mensual de gasto de electricidad: $6895132.81
+Promedio mensual de calidad de café: 
+{'brazilian': 80.48, 'columbian': 84.19, 'ethiopia': 78.68, 'jamaica': 82.07}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 6
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.066
+Porcentaje mensual de cafe vendido en 2X1: %17.51
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $1509061.3
+Promedio mensual de gasto de electricidad: $9452526.82
+Promedio mensual de calidad de café: 
+{'brazilian': 79.82, 'columbian': 83.54, 'ethiopia': 78.09, 'jamaica': 81.39}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 6
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.006
+Porcentaje mensual de cafe vendido en 2X1: %17.41
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1498630.89
+Promedio mensual de gasto de electricidad: $14290449.39
+Promedio mensual de calidad de café: 
+{'brazilian': 79.18, 'columbian': 82.9, 'ethiopia': 77.52, 'jamaica': 80.64}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 11
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.048
+Porcentaje mensual de cafe vendido en 2X1: %30.42
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2747624.31
+Promedio mensual de gasto de electricidad: $8210490.98
+Promedio mensual de calidad de café: 
+{'brazilian': 81.12, 'columbian': 84.94, 'ethiopia': 79.31, 'jamaica': 82.82}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 11
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.024
+Porcentaje mensual de cafe vendido en 2X1: %30.39
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2753305.66
+Promedio mensual de gasto de electricidad: $6928416.58
+Promedio mensual de calidad de café: 
+{'brazilian': 80.66, 'columbian': 84.42, 'ethiopia': 78.84, 'jamaica': 82.26}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 11
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.033
+Porcentaje mensual de cafe vendido en 2X1: %30.49
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2758222.8
+Promedio mensual de gasto de electricidad: $9428744.91
+Promedio mensual de calidad de café: 
+{'brazilian': 80.08, 'columbian': 83.81, 'ethiopia': 78.29, 'jamaica': 81.63}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 11
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %30.34
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2742285.04
+Promedio mensual de gasto de electricidad: $14440184.28
+Promedio mensual de calidad de café: 
+{'brazilian': 79.42, 'columbian': 83.14, 'ethiopia': 77.7, 'jamaica': 80.92}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 16
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.015
+Porcentaje mensual de cafe vendido en 2X1: %42.11
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3989124.86
+Promedio mensual de gasto de electricidad: $8089471.81
+Promedio mensual de calidad de café: 
+{'brazilian': 81.29, 'columbian': 85.11, 'ethiopia': 79.44, 'jamaica': 83.01}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 16
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.021
+Porcentaje mensual de cafe vendido en 2X1: %42.23
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $4006516.81
+Promedio mensual de gasto de electricidad: $6996439.96
+Promedio mensual de calidad de café: 
+{'brazilian': 80.82, 'columbian': 84.61, 'ethiopia': 79.0, 'jamaica': 82.45}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 16
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %42.21
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3991964.46
+Promedio mensual de gasto de electricidad: $9387536.13
+Promedio mensual de calidad de café: 
+{'brazilian': 80.27, 'columbian': 84.04, 'ethiopia': 78.47, 'jamaica': 81.89}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 16
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %42.17
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3997830.03
+Promedio mensual de gasto de electricidad: $14287455.3
+Promedio mensual de calidad de café: 
+{'brazilian': 79.68, 'columbian': 83.42, 'ethiopia': 77.9, 'jamaica': 81.22}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 21
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.015
+Porcentaje mensual de cafe vendido en 2X1: %52.79
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5230301.42
+Promedio mensual de gasto de electricidad: $8042197.12
+Promedio mensual de calidad de café: 
+{'brazilian': 81.39, 'columbian': 85.23, 'ethiopia': 79.53, 'jamaica': 83.14}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 21
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.057
+Porcentaje mensual de cafe vendido en 2X1: %52.77
+Porcentaje de ventas perdidass por falta de café: %0.05
+Promedio mensual de costo por promociones: $5228999.36
+Promedio mensual de gasto de electricidad: $6951324.59
+Promedio mensual de calidad de café: 
+{'brazilian': 80.96, 'columbian': 84.72, 'ethiopia': 79.09, 'jamaica': 82.63}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 21
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.033
+Porcentaje mensual de cafe vendido en 2X1: %52.89
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5227338.14
+Promedio mensual de gasto de electricidad: $9453481.82
+Promedio mensual de calidad de café: 
+{'brazilian': 80.43, 'columbian': 84.16, 'ethiopia': 78.61, 'jamaica': 82.03}
+-----------------Nueva simulacion-----------
+Cafetera: Neo
+Dias al mes de promo: 21
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.021
+Porcentaje mensual de cafe vendido en 2X1: %52.79
+Porcentaje de ventas perdidass por falta de café: %0.05
+Promedio mensual de costo por promociones: $5208816.57
+Promedio mensual de gasto de electricidad: $14442926.35
+Promedio mensual de calidad de café: 
+{'brazilian': 79.84, 'columbian': 83.57, 'ethiopia': 78.04, 'jamaica': 81.46}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 1
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.042
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $252243.91
+Promedio mensual de gasto de electricidad: $8057425.13
+Promedio mensual de calidad de café: 
+{'brazilian': 83.83, 'columbian': 87.57, 'ethiopia': 82.03, 'jamaica': 85.39}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 1
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.045
+Porcentaje mensual de cafe vendido en 2X1: %3.09
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $251906.6
+Promedio mensual de gasto de electricidad: $6970164.05
+Promedio mensual de calidad de café: 
+{'brazilian': 83.24, 'columbian': 86.9, 'ethiopia': 81.51, 'jamaica': 84.8}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 1
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %3.08
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $251581.08
+Promedio mensual de gasto de electricidad: $9442754.83
+Promedio mensual de calidad de café: 
+{'brazilian': 82.64, 'columbian': 86.27, 'ethiopia': 80.93, 'jamaica': 84.07}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 1
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.024
+Porcentaje mensual de cafe vendido en 2X1: %3.11
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $253657.31
+Promedio mensual de gasto de electricidad: $14314818.26
+Promedio mensual de calidad de café: 
+{'brazilian': 81.95, 'columbian': 85.65, 'ethiopia': 80.29, 'jamaica': 83.36}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 6
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %17.38
+Porcentaje de ventas perdidass por falta de café: %0.03
+Promedio mensual de costo por promociones: $1500659.28
+Promedio mensual de gasto de electricidad: $8144120.31
+Promedio mensual de calidad de café: 
+{'brazilian': 83.98, 'columbian': 87.77, 'ethiopia': 82.16, 'jamaica': 85.63}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 6
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.045
+Porcentaje mensual de cafe vendido en 2X1: %17.47
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1503690.84
+Promedio mensual de gasto de electricidad: $6924015.43
+Promedio mensual de calidad de café: 
+{'brazilian': 83.47, 'columbian': 87.22, 'ethiopia': 81.67, 'jamaica': 85.05}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 6
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %17.44
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1500055.86
+Promedio mensual de gasto de electricidad: $9499192.94
+Promedio mensual de calidad de café: 
+{'brazilian': 82.94, 'columbian': 86.56, 'ethiopia': 81.13, 'jamaica': 84.4}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 6
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.0
+Porcentaje mensual de cafe vendido en 2X1: %17.57
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $1513524.22
+Promedio mensual de gasto de electricidad: $14435063.15
+Promedio mensual de calidad de café: 
+{'brazilian': 82.25, 'columbian': 85.85, 'ethiopia': 80.48, 'jamaica': 83.68}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 11
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.012
+Porcentaje mensual de cafe vendido en 2X1: %30.45
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2747067.22
+Promedio mensual de gasto de electricidad: $8223775.14
+Promedio mensual de calidad de café: 
+{'brazilian': 84.16, 'columbian': 87.89, 'ethiopia': 82.3, 'jamaica': 85.84}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 11
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.021
+Porcentaje mensual de cafe vendido en 2X1: %30.36
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2740990.75
+Promedio mensual de gasto de electricidad: $6876709.31
+Promedio mensual de calidad de café: 
+{'brazilian': 83.67, 'columbian': 87.4, 'ethiopia': 81.84, 'jamaica': 85.31}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 11
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.039
+Porcentaje mensual de cafe vendido en 2X1: %30.52
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2761588.94
+Promedio mensual de gasto de electricidad: $9335615.25
+Promedio mensual de calidad de café: 
+{'brazilian': 83.07, 'columbian': 86.79, 'ethiopia': 81.31, 'jamaica': 84.65}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 11
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.03
+Porcentaje mensual de cafe vendido en 2X1: %30.3
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $2733699.2
+Promedio mensual de gasto de electricidad: $14416420.29
+Promedio mensual de calidad de café: 
+{'brazilian': 82.44, 'columbian': 86.16, 'ethiopia': 80.66, 'jamaica': 83.92}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 16
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.057
+Porcentaje mensual de cafe vendido en 2X1: %42.17
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3984287.33
+Promedio mensual de gasto de electricidad: $8079991.38
+Promedio mensual de calidad de café: 
+{'brazilian': 84.28, 'columbian': 88.06, 'ethiopia': 82.41, 'jamaica': 86.01}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 16
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.033
+Porcentaje mensual de cafe vendido en 2X1: %42.19
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $4005495.7
+Promedio mensual de gasto de electricidad: $6908384.84
+Promedio mensual de calidad de café: 
+{'brazilian': 83.8, 'columbian': 87.58, 'ethiopia': 82.0, 'jamaica': 85.45}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 16
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.084
+Porcentaje mensual de cafe vendido en 2X1: %42.11
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3986887.68
+Promedio mensual de gasto de electricidad: $9338047.41
+Promedio mensual de calidad de café: 
+{'brazilian': 83.22, 'columbian': 87.0, 'ethiopia': 81.44, 'jamaica': 84.86}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 16
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.042
+Porcentaje mensual de cafe vendido en 2X1: %42.15
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $3997354.74
+Promedio mensual de gasto de electricidad: $14410844.99
+Promedio mensual de calidad de café: 
+{'brazilian': 82.64, 'columbian': 86.31, 'ethiopia': 80.86, 'jamaica': 84.16}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 21
+Temperatura seteada: 12
+Prom mensual de dias sin cafetera: 0.036
+Porcentaje mensual de cafe vendido en 2X1: %52.79
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5227979.19
+Promedio mensual de gasto de electricidad: $8087689.69
+Promedio mensual de calidad de café: 
+{'brazilian': 84.38, 'columbian': 88.22, 'ethiopia': 82.54, 'jamaica': 86.15}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 21
+Temperatura seteada: 16
+Prom mensual de dias sin cafetera: 0.006
+Porcentaje mensual de cafe vendido en 2X1: %52.81
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5217291.41
+Promedio mensual de gasto de electricidad: $6887610.54
+Promedio mensual de calidad de café: 
+{'brazilian': 83.96, 'columbian': 87.75, 'ethiopia': 82.08, 'jamaica': 85.63}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 21
+Temperatura seteada: 20
+Prom mensual de dias sin cafetera: 0.003
+Porcentaje mensual de cafe vendido en 2X1: %52.78
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5227843.73
+Promedio mensual de gasto de electricidad: $9301454.24
+Promedio mensual de calidad de café: 
+{'brazilian': 83.42, 'columbian': 87.22, 'ethiopia': 81.61, 'jamaica': 85.09}
+-----------------Nueva simulacion-----------
+Cafetera: Saturno
+Dias al mes de promo: 21
+Temperatura seteada: 24
+Prom mensual de dias sin cafetera: 0.027
+Porcentaje mensual de cafe vendido en 2X1: %52.81
+Porcentaje de ventas perdidass por falta de café: %0.04
+Promedio mensual de costo por promociones: $5223440.33
+Promedio mensual de gasto de electricidad: $14215044.84
+Promedio mensual de calidad de café: 
+{'brazilian': 82.85, 'columbian': 86.58, 'ethiopia': 81.04, 'jamaica': 84.43}
